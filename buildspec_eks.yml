@@ -33,6 +33,7 @@ phases:
 
   build:
     commands:
+      - docker login -u pm55 -p Prateek@55
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
